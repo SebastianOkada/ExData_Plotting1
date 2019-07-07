@@ -14,6 +14,8 @@ rownames(data) <- 1 : nrow(data)
 
 attach(data)
 
+##mergin the new colum "Flag_Date_Time" with the others from column 3 to 9.
+
 data <- cbind(data[, 10], data[, 3:9])
 
 colname <- colnames(data)
